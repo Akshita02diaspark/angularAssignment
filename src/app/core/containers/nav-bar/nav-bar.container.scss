@@ -1,0 +1,22 @@
+@import '~src/styles/abstracts/variables';
+
+:host {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    color: $navbar-dark-color;
+ 
+}
+:host  #icon{
+    width: 25px;
+    height: 3px;
+    background-color: $navbar-dark-color;
+    margin: 6px 0;
+    display: block
+      
+    }
+     :host :hover{
+        background-color: $navbar-light-hover-color
+     }

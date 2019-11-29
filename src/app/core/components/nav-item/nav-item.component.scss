@@ -1,0 +1,25 @@
+@import '~src/styles/abstracts/variables';
+
+:host {
+    display: block;
+    padding: $nav-link-padding-y $nav-link-padding-x;
+    color: $navbar-dark-color;
+   
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  
+    // Disabled state lightens text
+    &.disabled {
+      color: $nav-link-disabled-color;
+      pointer-events: none;
+      cursor: default;
+    }
+
+    &.active  {
+      color: $navbar-dark-active-color;
+    }
+  }
+  
